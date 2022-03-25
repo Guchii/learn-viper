@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: var(--viper-green);
 }
 
 a {
@@ -20,17 +21,18 @@ a {
 :root {
   --viper-green: #19c55d;
   --white: #fafafa;
+  --black: #212121;
 }
 
 .mainHeading {
   font-size: 300px;
-  color: var(--viper-green);
   letter-spacing: -0.125em;
+  line-height: 240px;
 }
 
 .toTop {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -59,15 +61,17 @@ nav ul {
 }
 
 nav ul li {
-  font-size: 32px;
+  font-size: 48px;
   font-weight: bold;
+  color: var(--black);
 }
 
 .abilities {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 16px;
   width: 540px;
+  transform: translate(80px);
 }
 
 .abilities > div {
@@ -80,7 +84,6 @@ nav ul li {
   flex: 1 1 30%;
   font-size: 18px;
   line-height: 22px;
-  color: var(--viper-green);
 }
 
 main {
@@ -91,12 +94,23 @@ main {
 }
 main > .left {
   flex: 1 1 50%;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
 
 main > .right {
+  padding: 32px;
   flex: 1 1 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .viper {
   position: absolute;
   bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
