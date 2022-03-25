@@ -13,4 +13,90 @@ a {
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --viper-green: #19c55d;
+  --white: #fafafa;
+}
+
+.mainHeading {
+  font-size: 300px;
+  color: var(--viper-green);
+  letter-spacing: -0.125em;
+}
+
+.toTop {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 24px;
+}
+
+.roundedGreen {
+  background-color: var(--viper-green);
+  color: var(--white);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: bolder;
+}
+
+.image {
+  height: 150px;
+  width: 150px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 8px;
+}
+
+nav ul li {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.abilities {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 540px;
+}
+
+.abilities > div {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.abilities > div p {
+  flex: 1 1 30%;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--viper-green);
+}
+
+main {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+main > .left {
+  flex: 1 1 50%;
+}
+
+main > .right {
+  flex: 1 1 30%;
+}
+.viper {
+  position: absolute;
+  bottom: 0;
 }
