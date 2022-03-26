@@ -24,19 +24,25 @@ export default function Home() {
                 <img src="/images/poison-cloud.png" alt="" />
               </div>
               <p>
-                Sign up to our newsletter and we’ll keep you up to date with the
-                latest arrivals and sales. Won't be overdoing it, we hate spam
-                mails as much as
+                <strong>Equip</strong> a chemical launcher.
+                <strong>Fire</strong> to launch a canister that shatters upon
+                hitting the floor, creating a lingering chemical zone that
+                damages agents and inflicts the <strong>Vulnerable</strong>{' '}
+                debuff for 2s, making them receive 200% damage from other
+                sources.
               </p>
             </div>
             <div>
               <div className="roundedGreen image">
-                <img src="/images/toxic-screen.png" alt="" />
+                <img src="/images/toxic-screen.png" alt="toxicScreen" />
               </div>
               <p>
-                Sign up to our newsletter and we’ll keep you up to date with the
-                latest arrivals and sales. Won't be overdoing it, we hate spam
-                mails as much as
+                <strong>Equip</strong> a chemical launcher.
+                <strong>Fire</strong> to launch a canister that shatters upon
+                hitting the floor, creating a lingering chemical zone that
+                damages agents and inflicts the <strong>Vulnerable</strong>{' '}
+                debuff for 2s, making them receive 200% damage from other
+                sources.
               </p>
             </div>
           </div>
@@ -57,9 +63,19 @@ export default function Home() {
           </nav>
         </div>
       </main>
-      <div className="roundedGreen toTop">
+      <div className="roundedGreen toTop disNone">
         <span>TOP</span>
       </div>
+      <footer>
+        <a
+          href="//github.com/guchii"
+          rel="noreferrer"
+          target="_blank"
+          className="credits"
+        >
+          Designed & Built by Shivom Srivastava
+        </a>
+      </footer>
     </>
   );
 }

@@ -2,9 +2,11 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, */
+  /* Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
   color: var(--viper-green);
+  /* font-family: 'Dela Gothic One', cursive; */
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -22,12 +24,14 @@ a {
   --viper-green: #19c55d;
   --white: #fafafa;
   --black: #212121;
+  --title-font: 'Dela Gothic One', cursive;
 }
 
 .mainHeading {
-  font-size: 300px;
-  letter-spacing: -0.125em;
+  font-size: 240px;
+  /* letter-spacing: -0.125em; */
   line-height: 240px;
+  font-family: var(--title-font);
 }
 
 .toTop {
@@ -37,6 +41,10 @@ a {
   bottom: 0;
   right: 0;
   margin: 24px;
+}
+
+.disNone {
+  display: none !important;
 }
 
 .roundedGreen {
@@ -64,10 +72,11 @@ nav ul li {
   font-size: 48px;
   font-weight: bold;
   color: var(--black);
+  font-family: var(--title-font);
 }
 
 nav ul li::after {
-  content: "";
+  content: '';
   display: block;
   width: 0%;
   height: 4px;
@@ -76,7 +85,7 @@ nav ul li::after {
 }
 
 nav ul li:hover::after {
-  width: 100%;
+  width: 70%;
 }
 
 .abilities {
@@ -85,6 +94,10 @@ nav ul li:hover::after {
   gap: 16px;
   width: 540px;
   transform: translate(80px);
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 2px 8px 12px #21212115;
 }
 
 .abilities > div {
@@ -100,6 +113,7 @@ nav ul li:hover::after {
 }
 
 .abilities > div p strong {
+  color: var(--black);
   font-weight: bold;
 }
 
@@ -108,7 +122,11 @@ main {
   position: relative;
   width: 100%;
   height: 100vh;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1097%26quot%3b)' fill='none'%3e%3cpath d='M -2317.7474662962877%2c164 C -2029.75%2c196.6 -1453.75%2c328.8 -877.7474662962875%2c327 C -301.75%2c325.2 98.7%2c148 562.2525337037125%2c155 C 1025.8%2c162 1264.45%2c320.6 1440%2c362' stroke='rgba(25%2c 197%2c 93%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -817.6942420113525%2c250 C -529.69%2c304.8 46.31%2c526.6 622.3057579886475%2c524 C 1198.31%2c521.4 1898.77%2c247.2 2062.3057579886477%2c237 C 2225.84%2c226.8 1564.46%2c425.8 1440%2c473' stroke='rgba(25%2c 197%2c 93%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -2708.0195590793733%2c467 C -2420.02%2c384.6 -1844.02%2c67.6 -1268.0195590793733%2c55 C -692.02%2c42.4 -369.62%2c389 171.98044092062673%2c404 C 713.58%2c419 1186.4%2c184.8 1440%2c130' stroke='rgba(25%2c 197%2c 93%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1097'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
+
 main > .left {
   flex: 1 1 50%;
   padding: 32px;
@@ -140,4 +158,18 @@ main > .right {
 
 .image img {
   height: 90px;
+}
+
+footer {
+  background-color: var(--viper-green);
+  padding: 32px;
+  color: var(--white);
+  min-height: 240px;
+  display: grid;
+  place-items: center;
+}
+
+footer .credits {
+  font-size: 32px;
+  font-family: var(--title-font);
 }
