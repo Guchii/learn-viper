@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 export default function Home() {
@@ -64,13 +66,13 @@ export default function Home() {
           <nav>
             <ul>
               <li>
-                <a href="/">LEARN</a>
+                <Link href="/learn">LEARN</Link>
               </li>
               <li>
-                <a href="/">LINEUPS</a>
+                <Link href="/lineups">LINEUPS</Link>
               </li>
               <li>
-                <a href="/">ABOUT</a>
+                <Link href="/about">ABOUT</Link>
               </li>
             </ul>
           </nav>
