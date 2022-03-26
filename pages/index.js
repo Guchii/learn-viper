@@ -1,8 +1,21 @@
+import { useEffect, useState } from 'react';
+
 export default function Home() {
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.scrollY);
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   return (
     <>
       <main>
-        <img src="/images/viper.png" alt="viper" className="viper" />
+        <img
+          src="/images/viper.png"
+          alt="viper"
+          className="viper"
+          style={{ transform: `translate3d(0, -${offsetY * 0.5}px, 0)` }}
+        />
         <div className="left">
           <h1 className="mainHeading">VIPER</h1>
           <div className="abilities">

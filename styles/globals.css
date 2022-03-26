@@ -29,7 +29,6 @@ a {
 
 .mainHeading {
   font-size: 240px;
-  /* letter-spacing: -0.125em; */
   line-height: 240px;
   font-family: var(--title-font);
 }
