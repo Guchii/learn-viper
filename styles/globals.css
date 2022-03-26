@@ -66,6 +66,19 @@ nav ul li {
   color: var(--black);
 }
 
+nav ul li::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 4px;
+  background-color: #19c55d;
+  transition: 0.2s ease;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+}
+
 .abilities {
   display: flex;
   flex-direction: column;
@@ -84,6 +97,10 @@ nav ul li {
   flex: 1 1 30%;
   font-size: 18px;
   line-height: 22px;
+}
+
+.abilities > div p strong {
+  font-weight: bold;
 }
 
 main {
@@ -113,4 +130,14 @@ main > .right {
   left: 0;
   right: 0;
   margin: auto;
+  z-index: 10;
+}
+
+.image {
+  display: grid;
+  place-items: center;
+}
+
+.image img {
+  height: 90px;
 }
